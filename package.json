@@ -1,5 +1,5 @@
 {
-  "private": true,
+  "private": false,
   "name": "browser-localstorage",
   "version": "1.0.0",
   "scripts": {
@@ -8,6 +8,7 @@
     "docs:deploy": "gh-pages -d docs-dist",
     "build": "father-build",
     "deploy": "npm run docs:build && npm run docs:deploy",
+    "release": "npm run build && npm publish",
     "test": "umi-test",
     "test:coverage": "umi-test --coverage",
     "prepublishOnly": "npm run build",
@@ -18,6 +19,7 @@
     "lint:fix": "eslint --fix --cache --ext .js,.jsx,.ts,.tsx --format=pretty ./src && npm run lint:style",
     "tsc": "tsc --noEmit"
   },
+  "main": "lib/index.js",
   "module": "es/index.js",
   "typings": "es/index.d.ts",
   "gitHooks": {
@@ -30,10 +32,8 @@
       "prettier --write"
     ]
   },
-  "dependencies": {
-    "react": "^16.12.0 || ^17.0.0"
-  },
   "devDependencies": {
+    "react": "^16.12.0 || ^17.0.0",
     "@testing-library/jest-dom": "^5.15.1",
     "@testing-library/react": "^12.1.2",
     "@types/jest": "^27.0.3",
@@ -48,5 +48,6 @@
     "prettier": "^2.0.5",
     "stylelint": "^13.0.0",
     "typescript": "^4.2.4"
-  }
+  },
+  "files": ["es", "lib", "package.json", "README.md"]
 }
