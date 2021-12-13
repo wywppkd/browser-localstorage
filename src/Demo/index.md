@@ -1,6 +1,6 @@
 ```tsx
 import React, { useRef, useState } from 'react';
-import { setLocalStorage, getLocalStorage } from 'browser-localstorage';
+import { setLocalStorage, getLocalStorage } from '@wywppkd/browser-localstorage';
 
 export default () => {
   const ref = useRef<HTMLInputElement>(null);

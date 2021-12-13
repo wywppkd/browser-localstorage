@@ -1,3 +1,13 @@
+---
+hero:
+  title: browser-localstorage
+  desc: 支持设置过期时间的 localStorage
+  actions:
+    - text: Demo
+      link: /demo
+footer: Open-source MIT Licensed | Copyright © 2021<br />Powered by [wywppkd](https://github.com/wywppkd)
+---
+
 ## 轻松上手!
 
 ```bash
