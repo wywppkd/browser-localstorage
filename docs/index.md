@@ -11,7 +11,7 @@ footer: Open-source MIT Licensed | Copyright © 2021<br />Powered by [wywppkd](h
 ## 轻松上手!
 
 ```bash
-npm i browser-localstorage
+npm i @wywppkd/browser-localstorage
 ```
 
 ```ts

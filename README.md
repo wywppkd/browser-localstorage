@@ -1,7 +1,7 @@
 ## 轻松上手!
 
 ```bash
-npm i browser-localstorage
+npm i @wywppkd/browser-localstorage
 ```
 
 ```ts
