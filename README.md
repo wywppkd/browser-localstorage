@@ -13,7 +13,6 @@ setLocalStorage('token', 'xxxxx', 1); // 1天后过期
 getLocalStorage('token'); // 'xxxxx', 过期则返回null
 
 // 永不过期
-setLocalStorage('token', 'xxxxx');
 setLocalStorage('token', 'xxxxx', 0);
 
 // 保持原数据类型
